@@ -15,10 +15,12 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " for vimplug package manager
-call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdtree'
+
+" //call plug#begin('~/.vim/plugged')
+" //Plug 'scrooloose/nerdtree'
+
 "Plug 'nathanaelkane/vim-indent-guides'
-call plug#end()
+" //call plug#end()
 execute pathogen#infect()
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
