@@ -1,5 +1,6 @@
 set number
 set list
+set tabstop=4
 set listchars=eol:$,tab:>-
 syntax on
 color delek
