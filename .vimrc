@@ -35,3 +35,7 @@ let g:syntastic_check_on_wq = 0
 " asm helpers for syntastic
 autocmd BufNewFile,BufRead *.asm set filetype=nasm
 " ~/.vim/bundle/syntastic/syntax_checkers/nasm/nasm.vim - add -f elf64 to args for nasm
+
+filetype plugin indent on
+syntax on
+au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 expandtab smarttab autoindent
